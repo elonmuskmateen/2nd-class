@@ -1,0 +1,29 @@
+body{
+    margin: 20px;
+    background-color: green;
+}
+.box
+{
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 150%;
+}
+.flex-container
+{
+    /* (grid) automitically give colomns and rowss */
+    display: grid;
+
+    /* i specify colomns  --- repeat will automitically repeat the colomns */
+    grid-template-columns: repeat(3, 100px);
+
+    /* row are auto cauz it should increas rows autometically whitout specify */
+    /* minmax will felx the rows (150px is min height) and (auto is width) */
+    /* grid-template-rows: 12vw ; */
+    grid-auto-rows: minmax(150px, auto);
+
+    grid-gap: 10px;
+}
+
